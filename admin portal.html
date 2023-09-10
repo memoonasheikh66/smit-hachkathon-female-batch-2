@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Admin Portal</h1>
+    
+    
+    <!-- Select Class -->
+    <label for="classSelect">Select Class:</label>
+    <select id="classSelect">
+        
+    </select>
+    
+    <!-- ID Card UI -->
+    <div id="idCard">
+        <h2>ID Card</h2>
+        <form id="attendanceForm">
+            <label for="rollNumber">Roll Number:</label>
+            <input type="text" id="rollNumber" required><br>
+            
+            
+            <label for="attendanceStatus">Attendance Status:</label>
+            <select id="attendanceStatus">
+                <option value="Present">Present</option>
+                <option value="Absent">Absent</option>
+                <option value="Late">Late</option>
+                <option value="Leave">Leave</option>
+            </select>
+            
+            <button type="submit">Submit</button>
+        </form>
+        
+        <!-- Display student details here -->
+        <div id="studentDetails">
+           
+        </div>
+    </div>
+    <script>
+         
+const classOptions = ["Class A", "Class B", "Class C"];
+
+
+const studentData = {
+    "Class A": [
+        { rollNumber: "001", name: "John Doe", status: "Present" },
+        { rollNumber: "002", name: "Jane Smith", status: "Present" },
+        // Add more students for Class A
+    ],
+    "Class B": [
+        { rollNumber: "101", name: "Alice Johnson", status: "Present" },
+        { rollNumber: "102", name: "Bob Wilson", status: "Present" },
+        // Add more students for Class B
+    ],
+    // Add data for other classes
+};
+
+
+function populateClassOptions() {
+    const classSelect = document.getElementById("classSelect");
+    
+    for (const className of classOptions) {
+        const option = document.createElement("option");
+        option.text = className;
+        option.value = className;
+        classSelect.appendChild(option);
+    }
+}
+
+
+const classSelect = document.getElementById("classSelect");
+classSelect.addEventListener("change", function () {
+    const selectedClass = classSelect.value;
+    displayIDCard(selectedClass);
+});
+
+
+function displayIDCard(selectedClass) {
+    const idCard = document.getElementById("idCard");
+    const studentDetails = document.getElementById("studentDetails");
+    
+    
+    studentDetails.innerHTML = "";
+
+    if (selectedClass in studentData) {
+        const students = studentData[selectedClass];
+        for (const student of students) {
+            // Create and display student details
+            const studentInfo = document.createElement("div");
+            studentInfo.innerHTML = `
+                <p>Name: ${student.name}</p>
+                <p>Roll Number: ${student.rollNumber}</p>
+                <p>Status: ${student.status}</p>
+            `;
+
+            studentDetails.appendChild(studentInfo);
+        }
+    } else {
+        // Display a message for no data found
+        studentDetails.innerHTML = "<p>No data found for this class.</p>";
+    }
+}
+
+
+const attendanceForm = document.getElementById("attendanceForm");
+attendanceForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const rollNumber = document.getElementById("rollNumber").value;
+    const attendanceStatus = document.getElementById("attendanceStatus").value;
+    const selectedClass = classSelect.value;
+
+    updateStudentAttendance(selectedClass, rollNumber, attendanceStatus);
+
+    displayIDCard(selectedClass);
+});
+
+function updateStudentAttendance(className, rollNumber, attendanceStatus) {
+    if (className in studentData) {
+        const students = studentData[className];
+        for (const student of students) {
+            if (student.rollNumber === rollNumber) {
+                student.status = attendanceStatus;
+                break;
+            }
+        }
+    }
+}
+
+
+populateClassOptions();
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMIT Attendance Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            color: #3498db;
+        }
+        
+        h2 {
+            color: #3498db;
+        }
+        
+        p {
+            font-size: 16px;
+        }
+        
+        /* Attendance form styling */
+        .attendance-form {
+            margin-top: 20px;
+        }
+        
+        .attendance-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .attendance-form input[type="text"],
+        .attendance-form input[type="email"],
+        .attendance-form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .attendance-form input[type="submit"] {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .attendance-form input[type="submit"]:hover {
+            background-color: #3498db;
+        }
+    </style>
+
+
+
+
+</head>
+<body>
+    <header>
+        <h1>SMIT Attendance Portal</h1>
+    </header>
+    <div class="container">
+        <h2>Submit Your Attendance</h2>
+        <p>Please enter your details to submit your attendance for the Saylani Mass IT Training Program.</p>
+        <form class="attendance-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <input type="submit" value="Submit Attendance">
+        </form>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Find the form element by its ID
+            var attendanceForm = document.querySelector(".attendance-form");
+    
+            attendanceForm.addEventListener("submit", function (event) {
+                event.preventDefault(); // Prevent the default form submission
+    
+                // Get the input values
+                var name = document.getElementById("name").value;
+                var email = document.getElementById("email").value;
+    
+                // Display a confirmation message
+                var confirmationMessage = "Attendance submitted:\nName: " + name + "\nEmail: " + email;
+                alert(confirmationMessage);
+    
+                // Reset the form
+                attendanceForm.reset();
+            });
+        });
+
+    function isValidEmail(email) {
+        var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        return emailPattern.test(email);
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        var attendanceForm = document.querySelector(".attendance-form");
+
+        attendanceForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+
+            // Validate the email
+            if (!isValidEmail(email)) {
+                alert("Please enter a valid email address.");
+                return; // Don't submit the form if email is invalid
+            }
+
+            var confirmationMessage = "Attendance submitted:\nName: " + name + "\nEmail: " + email;
+            alert(confirmationMessage);
+
+            attendanceForm.reset();
+        });
+    });
+</script>
+
+    
+    
+
+</body>
+</html>
+
+

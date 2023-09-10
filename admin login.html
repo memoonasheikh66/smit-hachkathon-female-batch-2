@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login - SMIT Attendance Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include Firebase JavaScript SDK -->
+<script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js"></script>
+
+       
+</head>
+<body>
+    <div class="login-container">
+        <h1>Admin Login</h1>
+        <script src="admin.js"></script>
+        <form id="adminLoginForm" action="admin_dashboard.html" method="post">
+            <label for="adminUsername">Username:</label>
+            <input type="text" id="adminUsername" name="adminUsername" required><br>
+
+            <label for="adminPassword">Password:</label>
+            <input type="password" id="adminPassword" name="adminPassword" required><br>
+
+            <button type="submit">Log In</button>
+        </form>
+        <script src="app.js"></script>
+    </div>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyCj_bYvRUz3G5ZVbu4_2d37fnbfoLl9nms",
+            authDomain: "attendance-app-fc479.firebaseapp.com",
+            projectId: "attendance-app-fc479",
+            storageBucket: "attendance-app-fc479.appspot.com",
+            messagingSenderId: "0283060155",
+            appId: "1:870283060155:web:5df5c89b89b26f10ca9a9e"
+
+        };
+    
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    
+</body>
+</html>

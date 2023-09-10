@@ -1,0 +1,487 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* white background the page */
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* for navigation menu */
+nav {
+    background-color: #3498db; 
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 20px; 
+}
+
+a {
+    text-decoration: none;
+    color: #fff; 
+    font-weight: bold;
+}
+
+
+a:hover {
+    color: #f2f2f2; 
+}
+
+
+/* Header styling */
+header {
+    background-color: #3498db; 
+    color: #ffffff; 
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+main {
+    max-width: 800px; 
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Heading styles */
+h1,h2{
+    color:#ffffff;
+}
+
+
+/* Form styling */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #dcdcdc; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333; 
+}
+
+
+input[type="text"],
+input[type="password"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #dcdcdc; 
+    border-radius: 4px;
+}
+
+/* Button styling */
+button {
+    background-color: #3498db; 
+    color: #ffffff; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9; 
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #3498db; 
+    color: #ffffff;
+}
+
+/* css for home page*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff; 
+    color: #333; 
+}
+
+/* Header styles */
+header {
+    background-color: #3498db; 
+    color: #fff; 
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navigation menu styles */
+nav ul {
+    list-style-type: none;
+    background-color: #3498db; 
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; 
+    font-weight: bold;
+}
+
+
+main {
+    padding: 20px;
+}
+
+/* Section headings */
+h2 {
+    color: #3498db; 
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #3498db; 
+    color: #fff; 
+}
+
+/*css for logout page*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff; 
+    color: #333; 
+}
+
+/* Header styles */
+header {
+    background-color: #3498db; 
+    color: #fff; 
+    text-align: center;
+    padding: 20px;
+}
+
+/* Main content section styles */
+main {
+    padding: 20px;
+}
+
+/* Section headings */
+h2 {
+    color: #3498db; 
+}
+
+/* Link styles */
+a {
+    color: #3498db; 
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #3498db; 
+    color: #fff; 
+}
+
+/*css for student login page */
+
+
+body, h1, form {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; 
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+
+h1 {
+    color: #3498db; 
+}
+
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; 
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #3498db; 
+}
+
+
+/*css for admin page*/
+/* Reset default browser styles */
+body, h1, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; 
+    color: #333; 
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the header (h1) */
+h1 {
+    color: #3498db; 
+}
+
+/* Style the form container */
+#idCard {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; 
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style form elements */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="password"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color:  #3498db; 
+    color: #fff; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #3498db; 
+}
+
+/* Style the student details */
+#studentDetails {
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f5f5f5; 
+}
+
+/*css for admin login page*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 100px;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #3498db;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #3498db;
+}
+
+/*css for profile*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 50px;
+}
+
+.profile-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #3498db;
+}
+
+p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+
+/*css for portal*/
+
+
+/* Apply a blue and white theme to the entire page */
+body {
+    background-color: #f0f0f0; /* Light gray background */
+    font-family: Arial, sans-serif;
+}
+
+/* Style the h1 headings */
+h1 {
+    color: #007acc; /* Blue text color */
+}
+
+/* Style the form labels */
+label {
+    font-weight: bold;
+}
+
+/* Style the text input fields */
+input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+}
+
+/* Style the file input field */
+input[type="file"] {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Style the submit buttons */
+input[type="submit"] {
+    background-color: #007acc; /* Blue background color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Change button color on hover */
+input[type="submit"]:hover {
+    background-color: #005a9e; /* Darker blue on hover */
+}
+
